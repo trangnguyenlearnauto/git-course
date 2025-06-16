@@ -1,0 +1,15 @@
+Câu hỏi 1:
+- git add path_đến_file_cần_commit -> đùng để commit riêng lẻ mình file này thôi.
+- git add . -> dùng để commit tất cả các file thay đổi từ local lên vùng staging area.
+- git commit -"init project" -> chỉ dùng một lần duy nhất khi khởi tạo project, để đảm bảo git sẽ lưu trữ project của mình từ nay về sau.
+- git commit -m "message" -> dùng để đẩy code lên gitHub. Trong đó message cần tuân thủ theo code convention.
+- git status -> để check status của các file đã được commit trên staging area chưa. Màu xanh tức là file đã đưuọc commit trên stg, màu đỏ là file chưa đưuọc commit, vẫn ở trên local thôi. những file đã được push lên gitHub reporistory thì không hiện khi cạy lện git status.
+- git log -> để check tất cả lịch sử nhưng lần commit lên gitHub.
+
+Câu hỏi 2:
+a. 3 files đang ở local
+b. 3 file ở local, folder
+c. 3 file vẫn ở local
+d. File 1 được push lên vùng staging area
+e. File 1 đã được đẩy lên repository
+f. git add file? là add tất cả các file? vì không có file nào tên là file.
