@@ -5,3 +5,5 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+file1.txt
+oops/

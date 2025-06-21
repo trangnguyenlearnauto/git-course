@@ -1,0 +1,41 @@
+# bài tập 1
+1. `git commit --amend` dùng để sửa message vừa commit
+- các dùng: 
+ - sau khi commit: `git commit -m"message"`
+ - gõ lệnh `git commit --amnend`
+ - gõ i -> bật chế độ insert, insert update message
+ - gõ esc để thoát chế độ insert
+ - gõ :wq để back lại nơi chạy lệnh khác
+
+ *Cách để sửa nhanh hơn: `git commit --amend -m"message"`*
+
+
+2. `git restore --staged <file>` dùng để đưa file từ vùng staging về working directory(local).
+
+3. `git reset HEAD~{số lượng commit}` đưa file từ vùng repository về working directory.
+- Sẽ có 3 vùng làm việc working directory, STG, repository. 
+- Để đưa file qua các vùng ta có các câu lệnh sau:
+  - `Git add path file` để khởi tạo commit, đưa file từ workring directory -> STG
+  - `git commit -m"message"` để đẩy STG lên Repository
+  - `git push origin main` để đưa file từ Repository lên gitHub
+- Vậy để đưa file từ Repository về WD dùng lệnh: `git reset HEAD~{số lượng commit}`
+
+# bài tập 2
+a. tạo 3 files: 3 file ở vùng working directory
+b. git init: 3 file ở working directory, đã được khởi tạo
+c. git commit -m”init project”: 3 file ở working directory
+d. git add file1: File1 được đưa lên STG
+e. git commit -m”add file”: file1 được đưa lên Repository
+f. git add .: tất cả các file được đưa lên staging (file 2 và file 3)
+g. git restore --staged file2 : file2 được chuyển về working directory
+h. git commit -m”add all files”: file 3 được đẩy lên repository, vì file2 đã restore
+i. git reset HEAD~1: File3 chuyển về working directory. 
+
+
+# bài tập 3
+a. git init: lession-3-git đã được khởi tạo, vẫn ở working directory
+b. file1,file2 được tạo dưới foler lession-3-git.
+còn file 3 được tạo dưới folder oops
+c. file1 và file3 được thêm vào file .gitignore
+d. đưa file2 lên stg
+e. đưa file2 lên repository
